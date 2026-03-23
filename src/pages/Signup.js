@@ -29,7 +29,7 @@ const Signup = () => {
 
     if (!form.phone.trim())
       newErrors.phone = 'Phone number is required';
-    else if (!/^\+?[\d\s\-]{7,15}$/.test(form.phone))
+    else if (!/^\+?[\d\s-]{7,15}$/.test(form.phone))
       newErrors.phone = 'Enter a valid phone number';
 
     if (!form.email.trim())
